@@ -1,0 +1,418 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* rgb(0, 73, 77);
+rgb(38, 192, 171);
+hsl(180, 37.5%, 96.9%)
+hsl(185.3, 41.5%, 83.9%)
+hsl(205, 20.3%, 46.3%) */
+
+html{
+    font-size: 62.5%;
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: hsl(185.3, 41.5%, 83.9%);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    background: #FFF;
+    border-radius: 2rem;
+}
+
+.content .content__values{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    background: #fff;
+    border-radius: 2rem;
+}
+
+.content .content__display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    background: rgb(0, 73, 77);
+    border-radius: 2rem;
+}
+
+.content__values .content__total-value {
+    width: 80%;
+    height: auto;
+}
+
+.content__values .content__total-value .content__text-bill {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content__values .content__total-value fieldset{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 6rem;
+    border: none;
+    background: rgb(230, 255, 255);
+    border-radius: 1rem;
+    
+
+}
+fieldset input{
+    width: 85%;
+    height: 5.5rem;
+    padding: 2rem;
+    border: none;
+    background: rgb(230, 255, 255);
+    outline: none;
+    text-align: end;
+    font-family: 'Space Mono', monospace;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(0, 73, 77);
+    border-radius: 1rem;
+    
+    
+}
+.content__fieldset{
+    border-radius: 1rem;
+    padding: 0.5rem 0;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+fieldset input::placeholder{
+    color: rgb(0, 73, 77);
+    font-family: 'Space Mono', monospace;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+fieldset i{
+    color: rgb(0, 73, 77);
+    font-size: 2rem;
+    opacity: 0.5;
+    padding: 1rem;
+}
+.content__values .content__text-h2{
+    width: 80%;
+    height: auto;
+}
+
+.content__values-restaurant{
+    font-size: 2rem;
+    color: hsl(205, 20.3%, 46.3%);
+}
+
+.content__values .content__porcent-btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    width: 80%;
+    height: auto;
+    
+}
+
+.content__values .content__porcent-btn .content__btn-bill{
+    width: 10rem;
+    height: 5rem;
+    margin-bottom: .8rem;
+    border: none;
+    background:rgb(0, 73, 77);
+    border-radius: .5rem;
+    color: #FFF;
+    font-size: 2.5rem;
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+
+.content__values .content__porcent-btn .content__btn-bill-custom:nth-child(6){
+    width: 10rem;
+    height: 5rem;
+    
+    border: none;
+    background:rgb(230, 255, 255);
+    border-radius: .5rem;
+    color: hsl(205, 20.3%, 46.3%);
+    font-size: 2.2rem;
+    font-family: 'Space Mono', monospace;
+    outline: none;
+    text-align: end;
+    padding: 1rem;
+}
+
+.content__values .content__input-people{
+    width: 80%;
+    height: auto;
+}
+
+.content__values .content__input-people fieldset{
+    width: 100%;
+    border: none;
+    color: rgb(0, 73, 77);
+    background: rgb(230, 255, 255);
+    font-family: 'Space Mono', monospace;
+}
+
+.content__values .content__input-people h2{
+    margin-bottom: 1rem;
+}
+
+.content__btn-calc{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content__btn-calc .content__btn-calc-style{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 73, 77);
+    color:  rgb(230, 255, 255);
+    border: none;
+    width: 50%;
+    padding: 2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+
+}
+
+
+
+
+.content__display {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content__display  .content__tip{
+   width: 80%;
+   height: 20%;
+   display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content__display  .content__tip .content__tip-person{
+   width: 80%;
+   height: auto;
+}
+.content__display  .content__tip .content__tip-person h4{
+   font-size: 2rem;
+   color: #fff;
+   
+}
+.content__display  .content__tip .content__tip-person p{
+   font-size: 1.5rem;
+   color: rgb(167, 186, 200);
+   font-weight: bold;
+}
+.content__display  .content__tip .content__tip-display{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.content__display  .content__tip .content__tip-display i{
+   font-size: 4rem;
+   color: rgb(38, 192, 171);
+   margin-right: 2rem;
+}
+.content__display  .content__tip .content__tip-display h3{
+   font-size: 4rem;
+   color: rgb(38, 192, 171);
+   margin-right: 2.5rem;
+}
+
+
+.content__btn-reset{
+    width: 80%;
+    height: auto;
+}
+
+.content__btn-reset button{
+    width: 100%;
+    height: 6rem;
+    background: rgb(38, 192, 171);
+    border-radius: 5px;
+    color: rgb(0, 73, 77);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: 15rem;
+}
+
+.erroInput {
+    border: 2px solid rgba(255, 0, 0, 0.561);
+}
+
+.content__error-input{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.content__error-input.error-label{
+    opacity: 1;
+    visibility: visible;
+    color: rgba(255, 0, 0, 0.561);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.content__text-number-people {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content__error-input-people {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.content__error-input-people.error-label {
+    opacity: 1;
+    visibility: visible;
+    color: rgba(255, 0, 0, 0.561);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.content__values .content__porcent-btn .content__btn-bill.selected{
+    background:rgb(38, 192, 171);
+    color: #FFF;
+}
+
+@media (max-width: 800px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background: hsl(185.3, 41.5%, 83.9%);
+        padding: 1rem 0;
+    }
+    .content {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 2fr;
+        justify-items: center;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+        background: #FFF;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+    .content .content__porcent-btn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr;
+        justify-items: center;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        background: #FFF;
+        border-radius: 2rem;
+    }
+
+    .content .content__values .content__fieldset{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content .content__display{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 98%;
+        height: auto;
+        background: rgb(0, 73, 77);
+        border-radius: 2rem;
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+
+    .content__display  .content__tip{
+        padding: 2rem 0;
+        width: 90%;
+        height:auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+     }
+
+     .content .content__values{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 90%;
+        background: #fff;
+        border-radius: 2rem;
+    }
+
+    .content__btn-reset button{
+        width: 100%;
+        height: 6rem;
+        background: rgb(38, 192, 171);
+        border-radius: 5px;
+        color: rgb(0, 73, 77);
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        margin-top: 5rem;
+    }
+}
+
+
+
+
+
+
+
+

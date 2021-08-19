@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorjeta</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <div class="content__values">
+            <div class="content__total-value">
+                <div class="content__text-bill">
+                    <h2 class="content__values-restaurant">Bill</h2>
+                    <label class="content__error-input" for="error-input">Inválid Bill</label>
+                </div>
+                <fieldset>
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <input class="content__values-input" type="number" placeholder="0" min = "0" >
+                </fieldset>
+            </div>
+            <div class="content__text-h2">
+                <h2 class="content__values-restaurant">Select Tip %</h2>
+            </div>
+            
+            <div class="content__porcent-btn">
+                <button class="content__btn-bill" value="0.05">5%</button>
+                <button class="content__btn-bill" value="0.1">10%</button>
+                <button class="content__btn-bill" value="0.15">15%</button>
+                <button class="content__btn-bill" value="0.20">20%</button>
+                <button class="content__btn-bill" value="0.5">50%</button>
+                <input type="number" class="content__btn-bill-custom" placeholder="Custom" min="0">
+            </div>
+            
+            <div class="content__input-people">
+                <div class="content__text-number-people">
+                    <h2 class="content__values-restaurant">Number of People</h2>
+                    <label class="content__error-input-people" for="error-input">Inválid Number of People</label>
+                </div>
+                
+                <fieldset class="content__fieldset">
+                    <i class="fas fa-user"></i>
+                    <input class="content__values-input-people" type="number" placeholder="0" min="0">
+                </fieldset>
+            </div>
+            <div class="content__btn-calc">
+                <button class="content__btn-calc-style">CALCULATE</button>
+            </div>
+        </div>
+
+        <div class="content__display">
+            <div class="content__tip">
+                <div class="content__tip-person">
+                    <h4>Tip Amount</h4>
+                    <p>/ Person</p>
+                </div>
+                <div class="content__tip-display">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3 class="content__tip-amount">0.00</h3>
+                </div>
+            </div>
+
+            <div class="content__tip">
+                <div class="content__tip-person">
+                    <h4>Total</h4>
+                    <p>/ Person</p>
+                </div>
+                <div class="content__tip-display">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3 class="content__total-conta">0.00</h3>
+                </div>
+            </div>
+
+            <div class="content__btn-reset">
+                <button class="content__reset">RESET</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
